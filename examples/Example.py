@@ -18,7 +18,7 @@ def whoIs(query,sessionID="general"):
     
 
 call = multiFunctionCall({"whoIs":whoIs})
-firstQuestion="Hi, how are you?"
+firstQuestion="Hi, WELCOME TO COLLEGE ENQUIRY SYSTEM?"
 chat = Chat(os.path.join(os.path.dirname(os.path.abspath(__file__)),"Example.template"), reflections,call=call)
 chat.converse(firstQuestion)
 #chat.save_template("test.template")
